@@ -31,7 +31,7 @@ if(isset($_POST['btnsubmit']))
   $photo=$_FILES['uplimage']['name'];
   move_uploaded_file($_FILES['uplimage']['tmp_name'],"upload/".$photo);
   
-  mysqli_query($con,"insert into athlete_registration values(null,'$name','$dob','$gender','$email','$cell','$father','$mother','$district','$add','$pin','$coach','$blood','$id','$photo',null,2,'pending')") or die(mysqli_errno($con));
+  mysqli_query($con,"insert into athlete_registration values(null,'$name','$dob','$gender','$email','$cell','$father','$mother','$district','$add','$pin','$coach','$blood','$id','$photo',0,2,'pending')") or die(mysqli_errno($con));
   ?>
     <script>
      alert("Registration submitted...");

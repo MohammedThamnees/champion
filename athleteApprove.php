@@ -6,11 +6,11 @@
 </head>
 
 <?php
- include("admin_header.php");
+include("admin_header.php");
 include("connection.php");
 
 $athlet_id=$_GET['id'];
-$rs=mysqli_query($con,"select athlete_registration.*,college_registration.clg_name from athlete_registration,college_registration where athlete_registration.regno=college_registration.lid and ath_id='$athlet_id'");
+$rs=mysqli_query($con,"select athlete_registration.*,college_registration.clg_name from athlete_registration,college_registration where athlete_registration.clgid=college_registration.lid and ath_id='$athlet_id'");
 if($row=mysqli_fetch_array($rs))
 {
 ?>
@@ -100,6 +100,18 @@ if(isset($_POST['btnsubmit'])){
         </script>
     <?php
 }
+
+if(isset($_POST['btnreject'])){
+  $str="update athlete_registration set Approve='rejected' where ath_id='$athlet_id'";
+  mysqli_query($con,$str);
+    ?>
+     <script>
+       alert("rejected...");
+     window.location="athleteView.php";
+     
+        </script>
+    <?php
+}
   
 function randomnum()
 {
@@ -107,7 +119,7 @@ function randomnum()
   try
   {
       global $con;
-        $r2=mysqli_query($con,"select max(regnum) from athelete_registration");
+        $r2=mysqli_query($con,"select max(regno) from athlete_registration");
       $row1=mysqli_fetch_array($r2);
       $num=$row1[0];
       if($num==0)
