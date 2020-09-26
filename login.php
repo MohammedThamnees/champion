@@ -12,18 +12,18 @@ if(isset($_POST['btnlogin']))
 	$pass=$_POST['txtpassword'];
 	session_start();
 	
-	$res=mysqli_query($con,"select *from login where user_name='$uname'                       and password='$pass'");
+	$res=mysqli_query($con,"select *from login where username='$uname'                       and password='$pass'");
 	if(mysqli_num_rows($res)>0){
 		
 		$row=mysqli_fetch_array($res);
 		$type=$row[3];
 		$_SESSION['lid']=$row[0];
 		if($type=='admin'){
-			header("location:adminhome.php");
+			header("location:adminHome.php");
 			
 		}
-		else if($type=='institution'){
-			header("location:insthome.php");
+		else if($type=='user'){
+			header("location:clgHome.php");
 		}
 		else{
 			?>
@@ -51,6 +51,8 @@ if(isset($_POST['btnlogin']))
             <div class="container">
                 <div class="signin-content">
 <div class="signin-form">
+	<center><h2>Login Here</h2></center>
+  <center>
 <form id="form1" name="form1" method="post" action="" class="register-form">
 
       <table width="200" border="0" cellpadding="10" cellspacing="0" align="center">
@@ -66,7 +68,7 @@ if(isset($_POST['btnlogin']))
             <input type="password" name="txtpassword" id="txtpassword"      required="required" /> </div></td>
           </tr>
         <tr>
-          <td colspan="2" scope="row">Not registered... <a href="instreg.php">Register Now</a></td>
+          <td colspan="2" scope="row">Not registered... <a href="collegeRegister.php">Register Now</a></td>
           </tr>
         <tr>
           <th colspan="2" scope="row"> <div class="form-group form-button"><input type="submit" name="btnlogin" id="btnlogin" value="LOGIN" class="form-submit"/></div></th>

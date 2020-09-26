@@ -12,8 +12,8 @@
             <hr>
             <ul>
               <li><a href=".php" title="home">Home</a></li>
-              <li><a href=".php">Verified Athlet</a></li>
-              <li><a href=".php">Complaints</a></li>
+              <li><a href=".php">Athletic list</a></li>
+              <li><a href=".php">Complaint Register</a></li>
               <li><a href=".php">View Reply</a></li>
               <li><a href="" title="about">About Us</a></li>
               <li><a href="" title="contact">Contact</a></li>

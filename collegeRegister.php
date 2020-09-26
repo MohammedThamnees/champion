@@ -16,7 +16,7 @@ function validate()
 }
 </script>
 <?php
-include("header.php");
+include("log_header.php");
 include("connection.php");
 if(isset($_POST['submit'])){
   
