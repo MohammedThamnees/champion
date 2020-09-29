@@ -9,7 +9,7 @@
 include("clg_header.php");
 include("connection.php");
 session_start();
-//$clg_id=$_SESSION['lid'];
+$clg_id=$_SESSION['lid'];
 if(isset($_POST['btnsubmit']))
 {
   $name=$_POST['txtname'];
@@ -31,7 +31,7 @@ if(isset($_POST['btnsubmit']))
   $photo=$_FILES['uplimage']['name'];
   move_uploaded_file($_FILES['uplimage']['tmp_name'],"upload/".$photo);
   
-  mysqli_query($con,"insert into athlete_registration values(null,'$name','$dob','$gender','$email','$cell','$father','$mother','$district','$add','$pin','$coach','$blood','$id','$photo',0,2,'pending')") or die(mysqli_errno($con));
+  mysqli_query($con,"insert into athlete_registration values(null,'$name','$dob','$gender','$email','$cell','$father','$mother','$district','$add','$pin','$coach','$blood','$id','$photo',0,'$clg_id','pending')") or die(mysqli_errno($con));
   ?>
     <script>
      alert("Registration submitted...");
@@ -50,12 +50,12 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">Name</th>
     <td><label for="txtname"></label>
-      <input type="text" name="txtname" id="txtname" size="20" /></td>
+      <input type="text" name="txtname" id="txtname" size="20" required /></td>
   </tr>
   <tr>
     <th scope="row">DOB</th>
     <td><label for="dob"></label>
-    <input type="date" name="dob" id="dob" />
+    <input type="date" name="dob" id="dob" required/>
     </td>
   </tr>
   <tr>
@@ -72,27 +72,27 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">Email</th>
     <td><label for="txtemail"></label>
-      <input type="text" name="txtemail" id="txtemail" size="20" /></td>
+      <input type="text" name="txtemail" id="txtemail" size="20" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/></td>
   </tr>
   <tr>
     <th scope="row">Cell number</th>
     <td><label for="number"></label>
-      <input type="number" name="number" id="number" size="20" /></td>
+      <input type="number" name="number" id="number" size="20" required pattern="[789][0-9]{9}"/></td>
   </tr>
   <tr>
     <th scope="row">Fathers Name</th>
     <td><label for="txtfather"></label>
-      <input type="text" name="txtfather" id="txtfather" size="20" /></td>
+      <input type="text" name="txtfather" id="txtfather" size="20" required/></td>
   </tr>
   <tr>
     <th scope="row">Mothers Name</th>
     <td><label for="txtmother"></label>
-      <input type="text" name="txtmother" id="txtmother" size="20" /></td>
+      <input type="text" name="txtmother" id="txtmother" size="20" required/></td>
   </tr>
   <tr>
     <th scope="row">District</th>
     <td><label for="slcdistrict"></label>
-      <select name="slcdistrict" id="slcdistrict" >
+      <select name="slcdistrict" id="slcdistrict" required>
         <option>select</option>
         <option>Thiruvananthapuram</option>
         <option>Kollam</option>
@@ -114,22 +114,22 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">Address</th>
     <td><label for="txtadd"></label>
-      <textarea name="txtadd" id="txtadd" cols="45" rows="5"></textarea></td>
+      <textarea name="txtadd" id="txtadd" cols="45" rows="5" required></textarea></td>
   </tr>
   <tr>
     <th scope="row">Pin</th>
     <td><label for="txtpin"></label>
-      <input type="text" name="txtpin" id="txtpin" size="20" /></td>
+      <input type="text" name="txtpin" id="txtpin" size="20" required pattern="[0-9]{6}"/></td>
   </tr>
   <tr>
     <th scope="row">Coache Name</th>
     <td><label for="txtcoach"></label>
-      <input type="text" name="txtcoach" id="txtcoach" size="20" /></td>
+      <input type="text" name="txtcoach" id="txtcoach" size="20" required/></td>
   </tr>
   <tr>
     <th scope="row">Blood group</th>
     <td><label for="slcblood"></label>
-      <select name="slcblood" id="slcblood" >
+      <select name="slcblood" id="slcblood" required>
         <option>Select</option>
         <option>A+ve</option>
         <option>B+ve</option>
@@ -144,12 +144,12 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">Id proof/Aadhar number</th>
     <td><label for="imageid"></label>
-      <input type="file" name="imageid" id="imageid" size="20" /></td>
+      <input type="file" name="imageid" id="imageid" size="20" required/></td>
   </tr>
   <tr>
     <th scope="row">Upload photo</th>
     <td><label for="uplimage"></label>
-      <input type="file" name="uplimage" id="uplimage" size="20" /></td>
+      <input type="file" name="uplimage" id="uplimage" size="20" required/></td>
   </tr>
   <tr>
     <th scope="row"><input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" size="10" /></th>

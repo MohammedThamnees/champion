@@ -11,7 +11,7 @@
             <h2>Navigation</h2>
             <hr>
             <ul>
-              <li><a href=".php" title="home">Home</a></li>
+              <li><a href="clgHome.php" title="home">Home</a></li>
               <li><a href=".php">Athletic list</a></li>
               <li><a href=".php">Complaint Register</a></li>
               <li><a href=".php">View Reply</a></li>

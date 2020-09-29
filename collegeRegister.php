@@ -64,22 +64,22 @@ if(isset($_POST['submit'])){
 	<tr>
     <th scope="row">Name</th>
     <td><label for="txtname"></label>
-      <input type="text" name="txtname" id="txtname" /></td>
+      <input type="text" name="txtname" id="txtname" required /></td>
   </tr>
   <tr>
   	<th scope="row">Affiliation Number</th>
   	<td><label for="affno"></label>
-  		<input type="Number" name="affno" id="affno"/></td>
+  		<input type="Number" name="affno" id="affno" required/></td>
   	</tr> 
   	<tr>
   		<th scope="row">Address</th>
   		<td><label for="txtadd"></label>
-      <textarea name="txtadd" id="txtadd" cols="45" rows="5"></textarea></td>
+      <textarea name="txtadd" id="txtadd" cols="45" rows="5" required></textarea></td>
   	</tr>
   	<tr>
     <th scope="row">District</th>
     <td><label for="slcdistrict"></label>
-      <select name="slcdistrict" id="slcdistrict">
+      <select name="slcdistrict" id="slcdistrict" required>
         <option>select</option>
         <option>Thiruvananthapuram</option>
         <option>Kollam</option>
@@ -101,27 +101,27 @@ if(isset($_POST['submit'])){
   <tr>
     <th scope="row">Pin</th>
     <td><label for="txtperpin"></label>
-      <input type="text" name="txtpin" id="txtpin" /></td>
+      <input type="text" name="txtpin" id="txtpin" required pattern="[0-9]{6}"/></td>
   </tr>
   <tr>
     <th scope="row">Email</th>
     <td><label for="txtemail"></label>
-      <input type="text" name="txtemail" id="txtemail" /></td>
+      <input type="text" name="txtemail" id="txtemail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/></td>
   </tr>
   <tr>
     <th scope="row">Phone number</th>
     <td><label for="textfield"></label>
-      <input type="number" name="number" id="number" /></td>
+      <input type="number" name="number" id="number" required pattern="[789][0-9]{9}"/></td>
   </tr>
   <tr>
   	<th scope="row">Password</th>
   	<td><label for="txtpass"></label>
-  		<input type="Password" name="txtpass" id="txtpass"></td>
+  		<input type="Password" name="txtpass" id="txtpass" required></td>
   </tr>
   <tr>
   	<th scope="row">Confirm Password</th>
   	<td><label for="confpass"></label>
-  		<input type="Password" name="confpass" id="confpass"></td>
+  		<input type="Password" name="confpass" id="confpass" required></td>
   </tr>
   <tr>
   	<th colspan="2" scope="row"><input type="submit" name="submit" id="submit" value="Submit" /></th>

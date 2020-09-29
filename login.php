@@ -48,24 +48,23 @@ if(isset($_POST['btnlogin']))
 	
 <body>
 <section class="sign-in">
-            <div class="container">
-                <div class="signin-content">
+<div class="container">
+<div class="signin-content">
 <div class="signin-form">
 	<center><h2>Login Here</h2></center>
-  <center>
 <form id="form1" name="form1" method="post" action="" class="register-form">
 
-      <table width="200" border="0" cellpadding="10" cellspacing="0" align="center">
+      <table width="200" border="0" cellpadding="10" cellspacing="0">
         <tr>
           <th scope="row">Email/Username</th>
           <td> <div class="form-group"><label for="txtname"></label>
-            <input type="text" name="txtname" id="txtname" required="required" /></div>
+            <input type="text" name="txtname" id="txtname" required="required" title="Username is registered college email id" /></div>
             </td>
           </tr>
         <tr>
           <th scope="row">Password</th>
           <td> <div class="form-group"><label for="txtpassword"></label>
-            <input type="password" name="txtpassword" id="txtpassword"      required="required" /> </div></td>
+            <input type="password" name="txtpassword" id="txtpassword" required="required" /> </div></td>
           </tr>
         <tr>
           <td colspan="2" scope="row">Not registered... <a href="collegeRegister.php">Register Now</a></td>

@@ -12,11 +12,11 @@
 <body>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
-    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index.html"><span class="color-highlight">K</span>erala <span class="color-highlight">S</span>tate <span class="color-highlight">A</span>thletics <span class="color-highlight">A</span>ssociation</a></a>
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index.php"><span class="color-highlight">K</span>erala <span class="color-highlight">S</span>tate <span class="color-highlight">A</span>thletics <span class="color-highlight">A</span>ssociation</a></a>
 
     <div class="nav-collapse">
         <ul class="nav pull-right">
-        	<li class="active"><a href=".php">Home</a></li>
+        	<li class="active"><a href="index.php">Home</a></li>
         	<li><a href="collegeRegister.php">College Register</a></li>
         </ul>
       </div>

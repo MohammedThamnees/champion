@@ -14,9 +14,9 @@ $rs=mysqli_query($con,"select athlete_registration.*,college_registration.clg_na
 if($row=mysqli_fetch_array($rs))
 {
 ?>
-<body><center><h2>Athlete</h2><hr width="250">
+<body><center><h2>Athlete Approve</h2><hr width="250">
 <form action="" method="POST" >
-<table width="700"  cellspacing="0" cellpadding="10">
+<table width="700"  cellspacing="0" cellpadding="10" align="center">
 <tr >
    <td colspan="2" align="center"><a href="upload/<?php echo $row['photo'] ?>" target="_blank"><img src="upload/<?php echo $row['photo'] ?>" height="100" width="100" /></td>
   </tr>
@@ -74,7 +74,7 @@ if($row=mysqli_fetch_array($rs))
   </tr>
   <tr>
     <th scope="row">Id proof/Aadhar</th>
-    <td align="center"><a href="id/<?php echo $row['aadhar'] ?>" target="_blank"><img src="id/<?php echo $row['aadhar'] ?>" height="100" width="100" /></a></td>
+    <td><a href="id/<?php echo $row['aadhar'] ?>" target="_blank"><img src="id/<?php echo $row['aadhar'] ?>" height="100" width="100" /></a></td>
   </tr>
   
   <?php }?>

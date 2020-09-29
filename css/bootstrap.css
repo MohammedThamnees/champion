@@ -24,7 +24,8 @@
     padding: 0 30px;
 	}
 .register-form {
-  width: 100%; }
+  width: 100%;
+}
   
  .form-group {
   position: relative;
@@ -73,7 +74,7 @@
   
 	}
 .sign-in{
-	align: center;
+	align-content:center;
 }
 
 .material-icons-name {
@@ -2660,8 +2661,8 @@ button.close {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #A8BF75;
-  *background-color: #A8BF75;
+  background-color: #3b3c47;
+  *background-color: #3b3c47;
   border: 1px solid #cccccc;
   *border: 0;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -3650,7 +3651,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar {
-  color: #dbdbdb;
+  color: #1325ed;
 }
 
 .row .span4 img {
