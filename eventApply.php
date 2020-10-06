@@ -4,6 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>KSAA</title>
 </head>
+<?php
+	include("clg_header.php");
+	include("connection.php");
+$ath_id=$_GET['ath_id'];
+$rs=mysqli_query($con,"select * from events");
+?>
 <body><center>
 	<h2>Event Selection</h2></br>
 	<form action="" method="POST" >
@@ -11,22 +17,81 @@
 	<tr>
 	<th colspan="3"><h4>Individual Events</h4></th></tr>
 	<tr>
-			<td><select name="evnt1">
-			<option>--select--</option>
+		<td><select name="event1" id="event1">
+			<?php
+	  if(mysqli_num_rows($rs)>0)
+		{
+			while($row1=mysqli_fetch_array($rs))
+			{
+	
+	?>
+	  
+      <option value="<?php echo $row1[0]?>"><?php echo $row1[1]?></option>
+      
+      
+      <?php
+			}}
+	  ?>
+      
 		</select> </td>
 		<td>
-		<select name="evnt2">
-			<option>--select--</option>
+		<select name="event2" id="event2">
+			<?php
+			$rs=mysqli_query($con,"select * from events");
+	  if(mysqli_num_rows($rs)>0)
+		{
+			while($row2=mysqli_fetch_array($rs))
+			{
+	
+	?>
+	  
+      <option value="<?php echo $row2[0]?>"><?php echo $row2[1]?></option>
+      
+      
+      <?php
+			}}
+	  ?>
+      
 		</select> </td>
-		<td><select name="evnt3">
-			<option>--select--</option>
+		<td><select name="event3" id="event3">
+			<?php
+			$rs=mysqli_query($con,"select * from events");
+	  if(mysqli_num_rows($rs)>0)
+		{
+			while($row3=mysqli_fetch_array($rs))
+			{
+	
+	?>
+	  
+      <option value="<?php echo $row3[0]?>"><?php echo $row3[1]?></option>
+      
+      
+      <?php
+			}}
+	  ?>
+      
 		</select></td></tr> 
 		<tr>
 			<th colspan="3">
 		<h4>Group  Event</h4></th></tr>
 		<tr><th colspan="3">
-		<select name="grpevnt">
-			<option>--select--</option>
+		<select name="grpevent" id="grpevent">
+			<?php
+			$rs=mysqli_query($con,"select * from events");
+	  if(mysqli_num_rows($rs)>0)
+		{
+			while($row4=mysqli_fetch_array($rs))
+			{
+	
+	?>
+	  
+      <option value="<?php echo $row4[0]?>"><?php echo $row4[1]?></option>
+      
+      
+      <?php
+			}}
+	  ?>
+      
 		</select> </th>
 	</tr>
 	<tr>
@@ -37,5 +102,29 @@
 </center>
 </body>
 </html>
+<?php
+	include("clg_footer.php");
+?>	
 
-				
+<?php
+if(isset($_POST['submit']))
+{
+	session_start();
+	$meet_id=$_SESSION["meet_id"];
+	
+	$res1=$_POST['event1'];
+	$res2=$_POST['event2'];
+	$res3=$_POST['event3'];
+	$res4=$_POST['grpevent'];
+
+		mysqli_query($con,"insert into event_select values(null,'$res1','$ath_id','$meet_id'),(null,'$res2','$ath_id','$meet_id'),(null,'$res3','$ath_id','$meet_id'),(null,'$res4','$ath_id','$meet_id')");
+	?>
+    <script>
+	alert("Athlete applied....");
+	window.location="meetApply.php";
+	</script>
+	<?php
+			}		
+		
+		
+	?>		

@@ -35,7 +35,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="athleteRegister.php">Athlete Register</a></li>
-          <li><a href=".php">Event Participate</a></li>
+          <li><a href="meetView.php">Event Participate</a></li>
           <li><a href=".php">View Result</a></li>
           <li><a href=".php">Complaint Register</a></li>
           <li><a href=".php">Event List</a></li>

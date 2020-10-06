@@ -36,7 +36,7 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="collegeView.php">College Approve</a></li>
           <li><a href="athleteView.php">Athlete Approve</a></li>
-          <li><a href=".php">Meet Register</a></li>
+          <li><a href="meetRegister.php">Meet Register</a></li>
           <li><a href=".php">Result Publish</a></li>
           <li><a href=".php">View Complaint</a></li>
           <li><a href=".php">Event List</a></li>
