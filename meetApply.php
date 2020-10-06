@@ -7,7 +7,7 @@
 <?php include("clg_header.php")?>
 
 <body><form action="" method="post">
-<table width="200" border="1" cellspacing="0" cellpadding="10">
+<table width="200" border="1" cellspacing="0" cellpadding="10" align="center">
   <tr>
     <th scope="col">SI</th>
     <th scope="col">Reg.No</th>
