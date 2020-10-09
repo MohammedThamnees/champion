@@ -39,11 +39,12 @@
           <li><a href="meetRegister.php">Meet Register</a></li>
           <li><a href=".php">Result Publish</a></li>
           <li><a href=".php">View Complaint</a></li>
-          <li><a href=".php">Event List</a></li>
+          <li><a href="eventGender.php">Event List</a></li>
           <li><a href=".php">View Result</a></li>
-          <li><a href=".php">Athletic List</a></li>
+          <li><a href="athleteListadmin.php">Athletic List</a></li>
           <li><a href=".php">Point Table</a></li>
           <li><a href=".php">Records</a></li>
+          <li><a href="logout.php">Log Out</a></li>
         </ul>
       </div>
     </div>

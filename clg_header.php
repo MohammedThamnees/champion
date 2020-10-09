@@ -30,10 +30,11 @@ if($_SESSION["lid"]=="")
           <li><a href=".php">Event List</a></li>
           <li><a href=".php">Point Table</a></li>
           <li><a href=".php">Records</a></li>
+          <li><a href="logout.php">Log Out</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
   </div>
 </div>
-<br><br><br><br>
+<br><br><br>

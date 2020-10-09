@@ -49,7 +49,9 @@
           <div class="banner-text">
             <h2>Welcome to <span>CHAMPION</span></h2>
             <p>A Kerala State Athletic Association portal for organizing athletic meets.</p>
-            <a href="login.php" class="banner-button">Login / Register</a> </div>
+            <a href="login.php" class="banner-button">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="collegeRegister.php" class="banner-button">Register</a>
+          </div>
         </div>
       </div>
     </div>

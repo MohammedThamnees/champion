@@ -1,3 +1,4 @@
+<br><br><br>
 <div class="container">
   <!--Start Carousel-->
   <!--End Carousel-->
@@ -12,7 +13,7 @@
             <hr>
             <ul>
               <li><a href="clgHome.php" title="home">Home</a></li>
-              <li><a href=".php">Athletic list</a></li>
+              <li><a href="athleteListclg.php">Athletic list</a></li>
               <li><a href=".php">Complaint Register</a></li>
               <li><a href=".php">View Reply</a></li>
               <li><a href="" title="about">About Us</a></li>

@@ -26,10 +26,11 @@ if($_SESSION["lid"]=="")
           <li class="active"><a href="adminHome.php">Home</a></li>
           <li><a href="collegeView.php">College Approve</a></li>
           <li><a href="athleteView.php">Athlete Approve</a></li>
-          <li><a href=".php">Meet Register</a></li>
+          <li><a href="meetRegister.php">Meet Register</a></li>
           <li><a href=".php">Result Publish</a></li>
           <li><a href=".php">Point Table</a></li>
           <li><a href=".php">Records</a></li>
+          <li><a href="logout.php">Log Out</a></li>
         </ul>
 
       </div>
@@ -37,4 +38,4 @@ if($_SESSION["lid"]=="")
     </div>
   </div>
 </div>
-<br><br><br><br>
+<br><br><br>
