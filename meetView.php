@@ -17,8 +17,11 @@ $rs=mysqli_query($con,"select meet_register.* from meet_register where apply_bef
 ?>
 
 <body>
+  <center>
+  <h1>MEET VIEW</h1>
+  <br>
 <form action="" method="post">
-<table width="800" border="0" cellspacing="0" cellpadding="20" align="center">
+<table width="800" border="0" cellspacing="0" cellpadding="20">
   <tr>
     <th>Meet Name  :  </th>
     <td scope="col"><?php echo $row[1]?></td>
@@ -49,6 +52,7 @@ $rs=mysqli_query($con,"select meet_register.* from meet_register where apply_bef
  ?>
 </table>
 </form>
+</center>
 </body>
 <?php include("clg_footer.php")?>
 </html>

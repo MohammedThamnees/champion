@@ -10,7 +10,10 @@ include("connection.php");
 $clg_id=$_SESSION['lid'];
 ?>
 <body>
-<table width="700" border="1" cellspacing="0" cellpadding="10" align="center">
+  <center>
+    <h1>Current Status of Registered Athletes</h1>
+    <br>
+<table width="700" border="1" cellspacing="0" cellpadding="10">
   <tr>
     <th>Sl</th>
     <th>Name</th>
@@ -33,7 +36,7 @@ while($row=mysqli_fetch_array($rs))
   </tr>
   <?php $i++; }?>
 </table>
-
+</center>
 </body>
 <?php include("clg_footer.php")?>
 </html>

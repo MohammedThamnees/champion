@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
 
 <body>
 	<center>
-		<h2>Meet Register</h2>
+		<h1>Meet Register</h1>
 		<form action="" method="POST" enctype="multipart/form-data">
 			<table border="0" width="400" cellspacing="0" cellpadding="10">
 				<tr>

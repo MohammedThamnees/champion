@@ -6,8 +6,12 @@
 </head>
 <?php include("clg_header.php")?>
 
-<body><form action="" method="post">
-<table width="200" border="1" cellspacing="0" cellpadding="10" align="center">
+<body>
+<center>
+    <h1>Approved Athletes of the College</h1>
+    <br><br>
+<form action="" method="post">
+<table width="200" border="1" cellspacing="0" cellpadding="10">
   <tr>
     <th scope="col">SI</th>
     <th scope="col">Reg.No</th>
@@ -38,6 +42,7 @@ while($row=mysqli_fetch_array($rs))
  ?>
 </table>
 </form>
+</center>
 </body>
 <?php include("clg_footer.php")?>
 </html>

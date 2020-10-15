@@ -8,7 +8,6 @@
 <?php
 include("clg_header.php");
 include("connection.php");
-session_start();
 $clg_id=$_SESSION['lid'];
 if(isset($_POST['btnsubmit']))
 {

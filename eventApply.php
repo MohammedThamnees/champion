@@ -8,7 +8,7 @@
 	include("clg_header.php");
 	include("connection.php");
 $ath_id=$_GET['ath_id'];
-$rs=mysqli_query($con,"select * from events");
+$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 ?>
 <body><center>
 	<h2>Event Selection</h2></br>
@@ -37,7 +37,7 @@ $rs=mysqli_query($con,"select * from events");
 		<td>
 		<select name="event2" id="event2">
 			<?php
-			$rs=mysqli_query($con,"select * from events");
+			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row2=mysqli_fetch_array($rs))
@@ -55,7 +55,7 @@ $rs=mysqli_query($con,"select * from events");
 		</select> </td>
 		<td><select name="event3" id="event3">
 			<?php
-			$rs=mysqli_query($con,"select * from events");
+			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row3=mysqli_fetch_array($rs))
@@ -77,7 +77,7 @@ $rs=mysqli_query($con,"select * from events");
 		<tr><th colspan="3">
 		<select name="grpevent" id="grpevent">
 			<?php
-			$rs=mysqli_query($con,"select * from events");
+			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id=18 OR evt_id=19");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row4=mysqli_fetch_array($rs))
