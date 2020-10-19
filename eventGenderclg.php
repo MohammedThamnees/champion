@@ -11,7 +11,7 @@ include("clg_header.php");
 
 <body><form action="" method="post">
 	<center>
-	<h1>Event List View of Admin</h1>
+	<h1>Event List</h1>
 </center>
 <br>
 <iframe name="image" width="1300" height="700" align="right"></iframe>

@@ -6,9 +6,6 @@
 </head>
 <?php
 	include("clg_header.php");
-	include("connection.php");
-$ath_id=$_GET['ath_id'];
-$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 ?>
 <body><center>
 	<h2>Event Selection</h2></br>
@@ -19,6 +16,9 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 	<tr>
 		<td><select name="event1" id="event1">
 			<?php
+			include("connection.php");
+$gender=$_GET['gender'];
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row1=mysqli_fetch_array($rs))
@@ -37,7 +37,9 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 		<td>
 		<select name="event2" id="event2">
 			<?php
-			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
+			include("connection.php");
+$gender=$_GET['gender'];
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row2=mysqli_fetch_array($rs))
@@ -55,7 +57,9 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 		</select> </td>
 		<td><select name="event3" id="event3">
 			<?php
-			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
+			include("connection.php");
+$gender=$_GET['gender'];
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row3=mysqli_fetch_array($rs))
@@ -77,7 +81,9 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id!=18 AND evt_id!=19");
 		<tr><th colspan="3">
 		<select name="grpevent" id="grpevent">
 			<?php
-			$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id=18 OR evt_id=19");
+			include("connection.php");
+$gender=$_GET['gender'];
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row4=mysqli_fetch_array($rs))
@@ -111,6 +117,7 @@ if(isset($_POST['submit']))
 {
 	session_start();
 	$meet_id=$_SESSION["meet_id"];
+	$ath_id=$_SESSION["ath_id"];
 	
 	$res1=$_POST['event1'];
 	$res2=$_POST['event2'];

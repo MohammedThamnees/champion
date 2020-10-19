@@ -26,8 +26,8 @@ if($_SESSION["lid"]=="")
           <li class="active"><a href="clgHome.php">Home</a></li>
           <li><a href="athleteRegister.php">Athlete Register</a></li>
           <li><a href="meetView.php">Event Participate</a></li>
-          <li><a href=".php">View Result</a></li>
-          <li><a href="eventGender.php">Event List</a></li>
+          <li><a href="resultViewclg.php">View Result</a></li>
+          <li><a href="eventGenderclg.php">Event List</a></li>
           <li><a href=".php">Point Table</a></li>
           <li><a href=".php">Records</a></li>
           <li><a href="logout.php">Log Out</a></li>
