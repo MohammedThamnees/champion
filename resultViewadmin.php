@@ -12,6 +12,28 @@
 <form id="form1" name="form1" method="post" action="">
   <table width="500" border="0" cellspacing="0" cellpadding="10">
     <tr>
+    <label for="select">Select Meet</label>
+      <label for="select6"></label>
+      <?php
+      $buffer = "<select name='select6' id='select6'>
+        <option>-select-</option>";
+      
+        include("connection.php");
+        $rep="select * from meet_register";
+      $r1=mysqli_query($con,$rep);
+      if (mysqli_num_rows($r1)>0)
+{
+      while($row=mysqli_fetch_array($r1)){
+      $buffer = $buffer."<option value='".$row[0]."'>".$row[1]."</option>";
+    }
+}
+$buffer = $buffer."</select>";
+echo $buffer;
+     ?>
+      </select>
+    </th>
+  </tr>
+    <tr>
       <th scope="col">Select Gender</th>
       <th scope="col"><label for="select2"></label>
         <select name="select2" id="select2" onchange="show(this.value)">
@@ -28,7 +50,6 @@
       <th scope="col"><select name="select" id="select"  >
 
       
-      
       </select></th>
     </tr>
   </table>
@@ -39,6 +60,7 @@ if(isset($_POST['button']))
 {
 	
 	$ev=$_POST["select"];
+  $meet=$_POST["select6"];
 	
 	?>
 
@@ -51,7 +73,7 @@ if(isset($_POST['button']))
   $point=0;
   $p=0;
   $r=0;
-  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where event='$ev' and athlete_registration.regno=result.first and college_registration.lid=athlete_registration.clgid");
+  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where meet_id='$meet' and evt_id='$ev' and athlete_registration.regno=result.first and college_registration.lid=athlete_registration.clgid");
   if(mysqli_num_rows($rs)>0)
 		{
 			while($row=mysqli_fetch_array($rs))
@@ -59,7 +81,7 @@ if(isset($_POST['button']))
 				$id=$row[2];
 				
 	
-	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.first and( result.first='$id' or result.second='$id' or result.third='$id') and result.event!='$ev'");
+	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.first and( result.first='$id' or result.second='$id' or result.third='$id') and result.meet_id='$meet' and result.evt_id!='$ev'");
 
  if(mysqli_num_rows($r1)>0)
 		{
@@ -117,7 +139,7 @@ if(isset($_POST['button']))
   $point1=0;
   $p1=0;
   $r2=0;
-  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where event='$ev' and athlete_registration.regno=result.second and college_registration.lid=athlete_registration.clgid");
+  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where meet_id='$meet' and evt_id='$ev' and athlete_registration.regno=result.second and college_registration.lid=athlete_registration.clgid");
   if(mysqli_num_rows($rs)>0)
 		{
 			while($row=mysqli_fetch_array($rs))
@@ -125,7 +147,7 @@ if(isset($_POST['button']))
 				$id=$row[2];
 				
 	
-	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.second and( result.first='$id' or result.second='$id' or result.third='$id') and result.event!='$ev'");
+	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.second and( result.first='$id' or result.second='$id' or result.third='$id') and result.meet_id='$meet' and result.evt_id!='$ev'");
 
  if(mysqli_num_rows($r1)>0)
 		{
@@ -187,7 +209,7 @@ if(isset($_POST['button']))
   $point1=0;
   $p1=0;
   $r2=0;
-  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where event='$ev' and athlete_registration.regno=result.third and college_registration.lid=athlete_registration.clgid");
+  $rs=mysqli_query($con,"select athlete_registration.name,college_registration.clg_name,athlete_registration.regno from result,athlete_registration,college_registration where meet_id='$meet' and evt_id='$ev' and athlete_registration.regno=result.third and college_registration.lid=athlete_registration.clgid");
   if(mysqli_num_rows($rs)>0)
 		{
 			while($row=mysqli_fetch_array($rs))
@@ -195,7 +217,7 @@ if(isset($_POST['button']))
 				$id=$row[2];
 				
 	
-	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.third and( result.first='$id' or result.second='$id' or result.third='$id') and result.event!='$ev'");
+	$r1=mysqli_query($con,"select result.* from result,athlete_registration where  athlete_registration.regno=result.third and( result.first='$id' or result.second='$id' or result.third='$id') and result.meet_id='$meet' and result.evt_id!='$ev'");
 
  if(mysqli_num_rows($r1)>0)
 		{

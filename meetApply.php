@@ -26,7 +26,7 @@ $rs=mysqli_query($con,"select athlete_registration.* from athlete_registration w
 $i=1;
 while($row=mysqli_fetch_array($rs))
 {
-	$_SESSION["ath_id"]=$row[0];
+	
 ?>
   <tr>
     <td scope="col"><?php echo $i?></td>
@@ -34,7 +34,7 @@ while($row=mysqli_fetch_array($rs))
     <td scope="col"><?php echo $row[1]?></td>
     <td scope="col"><?php echo $row[2]?></td>
     <td scope="col"><?php echo $row[3]?></td>
-    <td scope="col"><a href="eventApply.php?gender=<?php echo $row[3]?>">apply</a></td>
+    <td scope="col"><a href="eventApply.php?gender=<?php echo $row[3]?>&ath_id=<?php echo $row[0]?>">apply</a></td>
     </tr>
     <?php
  $i++; 

@@ -10,6 +10,28 @@
   <form action="" method="post">
 <table width="600" border="0" cellspacing="0" cellpadding="10">
   <tr>
+    <th colspan="2" scope="row"><label for="select">Select Meet</label>
+      <label for="select6"></label>
+      <?php
+      $buffer = "<select name='select6' id='select6'>
+        <option>-select-</option>";
+      
+        include("connection.php");
+        $rep="select * from meet_register";
+      $r1=mysqli_query($con,$rep);
+      if (mysqli_num_rows($r1)>0)
+{
+      while($row=mysqli_fetch_array($r1)){
+      $buffer = $buffer."<option value='".$row[0]."'>".$row[1]."</option>";
+    }
+}
+$buffer = $buffer."</select>";
+echo $buffer;
+     ?>
+      </select>
+    </th>
+  </tr>
+  <tr>
     <th colspan="2" scope="row"><label for="select">Select Gender</label>
       <label for="select5"></label>
       <select name="select5" id="select5" onchange="shows(this.value)">
@@ -71,12 +93,13 @@
 include("connection.php");
 if(isset($_POST['button']))
 {
+  $meet=$_POST['select6'];
 	$event=$_POST['select'];
 	$first=$_POST['select2'];
 	$second=$_POST['select3'];
 	$third=$_POST['select4'];
 	
-	mysqli_query($con,"insert into result values(null,curdate(),'$first','$second','$third','$event')");
+	mysqli_query($con,"insert into result values(null,curdate(),'$first','$second','$third','$event','$meet')");
 
   ?>
   <script>

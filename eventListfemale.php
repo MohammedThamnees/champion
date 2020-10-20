@@ -15,7 +15,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=1)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=20)");
   ?>
   <tr>
     <th colspan="7"><h2>100 meter running</h2></th>
@@ -50,7 +50,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=2)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=21)");
   ?>
   <tr>
     <th colspan="7"><h2>200 meter running</h2></th>
@@ -85,7 +85,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=3)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=22)");
   ?>
   <tr>
     <th colspan="7"><h2>400 meter running</h2></th>
@@ -120,7 +120,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=4)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=23)");
   ?>
   <tr>
     <th colspan="7"><h2>800 meter running</h2></th>
@@ -155,7 +155,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=5)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=24)");
   ?>
   <tr>
     <th colspan="7"><h2>1500 meter running</h2></th>
@@ -190,7 +190,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=6)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=25)");
   ?>
   <tr>
     <th colspan="7"><h2>5000 meter running</h2></th>
@@ -225,7 +225,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=7)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=26)");
   ?>
   <tr>
     <th colspan="7"><h2>1000 meter running</h2></th>
@@ -260,7 +260,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=8)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=27)");
   ?>
   <tr>
     <th colspan="7"><h2>110 meter hurdles</h2></th>
@@ -295,7 +295,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=9)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=28)");
   ?>
   <tr>
     <th colspan="7"><h2>400 meter hurdles</h2></th>
@@ -330,7 +330,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=10)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=29)");
   ?>
   <tr>
     <th colspan="7"><h2>Shortput</h2></th>
@@ -365,7 +365,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=11)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=30)");
   ?>
   <tr>
     <th colspan="7"><h2>Disc Throw</h2></th>
@@ -400,7 +400,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=12)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=31)");
   ?>
   <tr>
     <th colspan="7"><h2>Javelin</h2></th>
@@ -435,7 +435,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=13)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=32)");
   ?>
   <tr>
     <th colspan="7"><h2>Hammer Throw</h2></th>
@@ -470,7 +470,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=14)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=33)");
   ?>
   <tr>
     <th colspan="7"><h2>Long Jump</h2></th>
@@ -505,7 +505,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=15)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=34)");
   ?>
   <tr>
     <th colspan="7"><h2>Triple Jump</h2></th>
@@ -540,7 +540,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=16)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=35)");
   ?>
   <tr>
     <th colspan="7"><h2>High Jump</h2></th>
@@ -575,7 +575,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=17)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=36)");
   ?>
   <tr>
     <th colspan="7"><h2>Pole Walt</h2></th>
@@ -610,7 +610,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=18)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=37)");
   ?>
   <tr>
     <th colspan="7"><h2>4*100 meter relay</h2></th>
@@ -645,7 +645,7 @@ include("connection.php");
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=19)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=38)");
   ?>
   <tr>
     <th colspan="7"><h2>4*400 meter relay</h2></th>

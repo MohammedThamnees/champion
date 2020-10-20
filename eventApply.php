@@ -117,7 +117,8 @@ if(isset($_POST['submit']))
 {
 	session_start();
 	$meet_id=$_SESSION["meet_id"];
-	$ath_id=$_SESSION["ath_id"];
+
+	$ath_id=$_GET['ath_id'];
 	
 	$res1=$_POST['event1'];
 	$res2=$_POST['event2'];
