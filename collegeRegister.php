@@ -124,7 +124,10 @@ if(isset($_POST['submit'])){
   		<input type="Password" name="confpass" id="confpass" required></td>
   </tr>
   <tr>
-  	<th colspan="2" scope="row"><input type="submit" name="submit" id="submit" value="Submit" /></th>
+  	<th colspan="2" scope="row">
+      <div class="form-group form-button">
+        <input type="submit" name="submit" id="submit" value="Submit" class="form-submit"/></th>
+      </div>
   </tr>
 </table>
 </form>

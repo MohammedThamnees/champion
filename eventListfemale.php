@@ -12,10 +12,14 @@
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=20)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=20 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>100 meter running</h2></th>
@@ -47,10 +51,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=21)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=21 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>200 meter running</h2></th>
@@ -82,10 +90,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=22)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=22 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>400 meter running</h2></th>
@@ -117,10 +129,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=23)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=23 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>800 meter running</h2></th>
@@ -152,10 +168,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=24)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=24 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>1500 meter running</h2></th>
@@ -187,10 +207,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=25)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=25 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>5000 meter running</h2></th>
@@ -222,10 +246,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=26)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=26 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>1000 meter running</h2></th>
@@ -257,10 +285,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=27)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=27 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>110 meter hurdles</h2></th>
@@ -292,10 +324,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=28)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=28 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>400 meter hurdles</h2></th>
@@ -327,10 +363,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=29)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=29 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Shortput</h2></th>
@@ -362,10 +402,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=30)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=30 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Disc Throw</h2></th>
@@ -397,10 +441,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=31)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=31 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Javelin</h2></th>
@@ -432,10 +480,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=32)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=32 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Hammer Throw</h2></th>
@@ -467,10 +519,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=33)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=33 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Long Jump</h2></th>
@@ -502,10 +558,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=34)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=34 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Triple Jump</h2></th>
@@ -537,10 +597,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=35)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=35 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>High Jump</h2></th>
@@ -572,10 +636,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=36)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=36 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>Pole Walt</h2></th>
@@ -607,10 +675,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=37)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=37 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>4*100 meter relay</h2></th>
@@ -642,10 +714,14 @@ while($row=mysqli_fetch_array($rs))
 
 <?php
 include("connection.php");
+$pq=mysqli_query($con,"select max(meet_id) from event_select");
+while ($check=mysqli_fetch_array($pq)) {
+  $cond=$check[0];
+}
 $rs="";
 $r="";
   $rs=mysqli_query($con,"select athlete_registration.ath_id,athlete_registration.regno,athlete_registration.name,athlete_registration.gender,
-college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=38)");
+college_registration.clg_name from athlete_registration inner join college_registration on athlete_registration.clgid=college_registration.lid where athlete_registration.gender='female' and athlete_registration.ath_id in (select ath_id from event_select where evt_id=38 and meet_id=$cond)");
   ?>
   <tr>
     <th colspan="7"><h2>4*400 meter relay</h2></th>

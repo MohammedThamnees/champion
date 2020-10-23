@@ -45,8 +45,12 @@ if($row=mysqli_fetch_array($rs))
   </tr>
   <?php }?>
   <tr>
-    <td align="center"><input type="submit" name="submit" id="submit" value="VERIFY" /></td>
-    <td align="center"><input type="submit" name="reject" id="reject" value="Reject" /></td>
+    <td align="center">
+      <div class="form-group form-button">
+      <input type="submit" name="submit" id="submit" value="VERIFY" class="form-submit"/></td></div>
+    <td align="center">
+      <div class="form-group form-button">
+        <input type="submit" name="reject" id="reject" value="Reject" class="form-submit"/></td></div>
     </tr>
 </table>
 </form></center>

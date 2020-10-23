@@ -59,9 +59,10 @@ if(isset($_POST['submit']))
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
-						<input type="submit" name="submit" value="Submit" id="submit">
+						<div class="form-group form-button">
+							<input type="submit" name="submit" value="Submit" id="submit" class="form-submit">
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="button" name="cancel" id="cancel" value="Cancel"></td>
+						<input type="button" name="cancel" id="cancel" value="Cancel" class="form-submit"></div></td>
 				</tr>
 			</table>
 		</form>

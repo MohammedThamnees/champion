@@ -71,7 +71,7 @@
     display: none !important;
   }
     footer .span4 {
-	background: #fff;
+	background: #47444d;
 	min-height: 230px;
 	margin-bottom: 10px;
   }
@@ -142,8 +142,8 @@
 
 @media (max-width: 767px) {
   body {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -163,7 +163,7 @@
     margin-left: 0;
   }
   .container {
-    width: auto;
+    width: 100%;
   }
   .row-fluid {
     width: 100%;
@@ -223,7 +223,7 @@
   .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 724px;
+    width: 100%;
   }
   .span12 {
     width: 724px;
@@ -441,6 +441,13 @@
 .thumb-list {
 	margin-bottom: 50px;
 } 
+@media (min-width: 1300px) {
+  .container {
+    background: #47444d;
+    padding-right: 0;
+  }
+
+  }
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
@@ -461,7 +468,7 @@
   .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    width: 100%;
   }
   .span12 {
     width: 1170px;
@@ -488,7 +495,7 @@
     width: 470px;
   }
   .span4 {
-    width: 370px;
+    width: 450px;
   }
   .span3 {
     width: 270px;
@@ -685,7 +692,7 @@
     margin-left: 0;
   }
   footer .span4 {
-	background: #fff;
+	background: #47444d;
 	min-height: 300px;
 	margin-bottom: 10px;
   }
@@ -710,7 +717,7 @@
     padding: 5px;
   }
   .navbar .container {
-    width: auto;
+    width: 100%;
     padding: 0;
   }
   .navbar .brand {
@@ -821,7 +828,7 @@
     padding-left: 10px;
   }
     footer .span4 {
-	background: #fff;
+	background: #47444d;
 	min-height: 340px;
 	margin-bottom: 10px;
   }

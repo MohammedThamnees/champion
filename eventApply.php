@@ -101,8 +101,10 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 		</select> </th>
 	</tr>
 	<tr>
-		<th colspan="3"><input type="submit" name="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="button" name="cancel" value="Cancel"></th></tr>
+		<th colspan="3">
+			<div class="form-group form-button">
+				<input type="submit" name="submit" value="Submit" class="form-submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" name="cancel" value="Cancel" class="form-submit"></div></th></tr>
 	</table>
 	</form>
 </center>

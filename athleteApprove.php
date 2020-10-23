@@ -79,8 +79,12 @@ if($row=mysqli_fetch_array($rs))
   
   <?php }?>
   <tr>
-    <th scope="row"><input type="submit" name="btnsubmit" id="btnsubmit" value="Approve" /></th>
-    <th scope="row"><input type="submit" name="btnreject" id="btnreject" value="Reject" /></th>
+    <th scope="row">
+      <div class="form-group form-button">
+        <input type="submit" name="btnsubmit" id="btnsubmit" value="Approve" class="form-submit"/></th></div>
+    <th scope="row">
+      <div class="form-group form-button">
+        <input type="submit" name="btnreject" id="btnreject" value="Reject" class="form-submit"/></th></div>
     </tr>
 </table>
 </form>

@@ -151,8 +151,12 @@ if(isset($_POST['btnsubmit']))
       <input type="file" name="uplimage" id="uplimage" size="20" required/></td>
   </tr>
   <tr>
-    <th scope="row"><input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" size="10" /></th>
-    <th scope="row"><input type="button" name="btback" id="btback" value="Back" size="10"></th>
+    <th scope="row">
+      <div class="form-group form-button">
+        <input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" size="10" class="form-submit"/></div></th>
+    <th scope="row">
+      <div class="form-group form-button">
+        <input type="button" name="btback" id="btback" value="Back" size="10" class="form-submit"></div></th>
     </tr>
 </table>
 </form></center>

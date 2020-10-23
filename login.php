@@ -12,7 +12,7 @@ if(isset($_POST['btnlogin']))
 	$pass=$_POST['txtpassword'];
 	session_start();
 	
-	$res=mysqli_query($con,"select *from login where username='$uname'                       and password='$pass'");
+	$res=mysqli_query($con,"select *from login where username='$uname' and password='$pass'");
 	if(mysqli_num_rows($res)>0){
 		
 		$row=mysqli_fetch_array($res);
@@ -47,11 +47,11 @@ if(isset($_POST['btnlogin']))
 ?>
 	
 <body>
+	<center>
 <section class="sign-in">
-<div class="container">
 <div class="signin-content">
 <div class="signin-form">
-	<center><h2>Login Here</h2></center>
+<h2>Login Here</h2>
 <form id="form1" name="form1" method="post" action="" class="register-form">
 
       <table width="200" border="0" cellpadding="10" cellspacing="0">
@@ -77,8 +77,8 @@ if(isset($_POST['btnlogin']))
   </form>
 </div>
 </div>
-</div>
 </section>
+</center>
 </body>
 <?php include("footer.php")?>
 </html>

@@ -43,7 +43,9 @@ $rs=mysqli_query($con,"select meet_register.* from meet_register where apply_bef
     <td scope="col"><?php echo $row[5]?></td>
   </tr>
   <tr>
-     <td colspan="2" align="center"><a href="meetApply.php?date=<?php echo $row[6]?>">apply</a></td>
+     <td colspan="2" align="center">
+      <div class="form-group form-button">
+        <a href="meetApply.php?date=<?php echo $row[6]?>" class="form-submit">apply</a></div></td>
   </tr>
 
  <?php

@@ -53,7 +53,9 @@ echo $buffer;
       </select></th>
     </tr>
   </table>
-  <input type="submit" name="button" id="button" value="Result" />
+  <div class="form-group form-button">
+  <input type="submit" name="button" id="button" value="Result" class="form-submit"/>
+</div>
 
 <?php
 if(isset($_POST['button']))

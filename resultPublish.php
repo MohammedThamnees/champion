@@ -80,7 +80,8 @@ echo $buffer;
   </tr>
   <tr>
     <th colspan="2" scope="row">
-      <input type="submit" name="button" id="button" value="Publish Result" />
+      <div class="form-group form-button">
+      <input type="submit" name="button" id="button" value="Publish Result" class="form-submit"/></div>
     </th>
   </tr>
 </table>
