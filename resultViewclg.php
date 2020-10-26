@@ -12,8 +12,8 @@
 <form id="form1" name="form1" method="post" action="">
   <table width="500" border="0" cellspacing="0" cellpadding="10">
     <tr>
-    <th colspan="2" scope="row"><label for="select">Select Meet</label>
-      <label for="select6"></label>
+    <th scope="col">Select Meet</th>
+     <td align="center"> <label for="select6"></label>
       <?php
       $buffer = "<select name='select6' id='select6'>
         <option>-select-</option>";
@@ -30,8 +30,7 @@
 $buffer = $buffer."</select>";
 echo $buffer;
      ?>
-      </select>
-    </th>
+    </td>
   </tr>
     <tr>
       <th scope="col">Select Gender</th>
@@ -68,7 +67,10 @@ if(isset($_POST['button']))
 
 
   <p>&nbsp;</p>
-  <br>
+  
+  <table width="" border="0" cellspacing="0" cellpadding="30">
+    <tr>
+      <td>
   <table width="400" border="1" cellspacing="0" cellpadding="10">
   <?php
   include("connection.php");
@@ -133,9 +135,11 @@ if(isset($_POST['button']))
     </tr>
     <?php  }}?>
   </table>
+</td>
 
 <br><br><br>
-   
+
+    <td>
     <table width="400" border="1" cellspacing="0" cellpadding="10">
   <?php
   $point1=0;
@@ -204,8 +208,11 @@ if(isset($_POST['button']))
     </tr>
     <?php  }}?>
   </table>
+</td>
 
 <br><br><br>
+
+  <td>
     <table width="400" border="1" cellspacing="0" cellpadding="10">
   <?php
   $point1=0;
@@ -240,6 +247,7 @@ if(isset($_POST['button']))
           
           $r2=3;
         }
+      }}
           
       
   ?>
@@ -267,8 +275,11 @@ if(isset($_POST['button']))
       <td>Total Point</td>
       <td><?php echo $point1+$r2+$p1+3?></td>
     </tr>
-    <?php  }}}}?>
+    <?php  }}?>
   </table> 
+</td>
+</tr>
+</table>
   
   <?php
 }?>
