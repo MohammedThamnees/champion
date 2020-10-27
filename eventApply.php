@@ -18,7 +18,7 @@
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
-$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=18 and evt_id!=19 and evt_id!=37 and evt_id!=38");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row1=mysqli_fetch_array($rs))
@@ -39,7 +39,7 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
-$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=18 and evt_id!=19 and evt_id!=37 and evt_id!=38");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row2=mysqli_fetch_array($rs))
@@ -59,7 +59,7 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
-$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
+$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=18 and evt_id!=19 and evt_id!=37 and evt_id!=38");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row3=mysqli_fetch_array($rs))
@@ -83,7 +83,9 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
-$rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
+if ($gender==male) {
+
+$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id=18 or evt_id=19");
 	  if(mysqli_num_rows($rs)>0)
 		{
 			while($row4=mysqli_fetch_array($rs))
@@ -95,7 +97,23 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender'");
       
       
       <?php
-			}}
+			}}}
+
+	  if ($gender==female) {
+
+$rs=mysqli_query($con,"SELECT * FROM events WHERE evt_id=37 or evt_id=38");
+	  if(mysqli_num_rows($rs)>0)
+		{
+			while($row4=mysqli_fetch_array($rs))
+			{
+	
+	?>
+	  
+      <option value="<?php echo $row4[0]?>"><?php echo $row4[1]?></option>
+      
+      
+      <?php
+			}}}
 	  ?>
       
 		</select> </th>

@@ -11,7 +11,7 @@
     <h1>Approved Athletes of the College</h1>
     <br><br>
 <form action="" method="post">
-<table width="200" border="1" cellspacing="0" cellpadding="10">
+<table width="800" border="1" cellspacing="0" cellpadding="10">
   <tr>
     <th scope="col">SI</th>
     <th scope="col">Reg.No</th>
