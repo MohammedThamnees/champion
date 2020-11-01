@@ -28,9 +28,10 @@ if(isset($_POST['submit']))
 }
 ?>
 
-<body>
+<body style="font-size: 18px;">
 	<center>
 		<h1>Meet Register</h1>
+		<br><br>	
 		<form action="" method="POST" enctype="multipart/form-data">
 			<table border="0" width="400" cellspacing="0" cellpadding="10">
 				<tr>
@@ -61,7 +62,7 @@ if(isset($_POST['submit']))
 					<td colspan="2" align="center">
 						<div class="form-group form-button">
 							<input type="submit" name="submit" value="Submit" id="submit" class="form-submit">
-						&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="button" name="cancel" id="cancel" value="Cancel" class="form-submit"></div></td>
 				</tr>
 			</table>

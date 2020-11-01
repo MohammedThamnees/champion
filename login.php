@@ -46,15 +46,16 @@ if(isset($_POST['btnlogin']))
 
 ?>
 	
-<body>
+<body style="font-size: 18px;">
 	<center>
 <section class="sign-in">
 <div class="signin-content">
 <div class="signin-form">
-<h2>Login Here</h2>
+<h1>Login Here</h1>
+<br><br>
 <form id="form1" name="form1" method="post" action="" class="register-form">
 
-      <table width="200" border="0" cellpadding="10" cellspacing="0">
+      <table width="500" border="0" cellpadding="10" cellspacing="0">
         <tr>
           <th scope="row">Email/Username</th>
           <td> <div class="form-group"><label for="txtname"></label>

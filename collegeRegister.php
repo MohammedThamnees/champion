@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<body>
+<body style="font-size: 18px;">
 	 <center><h2>College Registration</h2></center>
 	 <center>
 <form action="" method="POST" enctype="multipart/form-data">

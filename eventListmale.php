@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-<body><form action="" method="post">
+<body style="font-size: 18px;"><form action="" method="post">
 <center>
 
 <table width="800" border="1" cellspacing="0" cellpadding="10">

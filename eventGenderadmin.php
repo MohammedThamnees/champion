@@ -9,7 +9,7 @@
 include("admin_header.php");
 ?>
 
-<body><form action="" method="post">
+<body style="font-size: 18px;"><form action="" method="post">
 	<center>
 	<h1>Event List</h1>
 </center>

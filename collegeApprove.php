@@ -12,35 +12,36 @@ $rs=mysqli_query($con,"select * from college_registration,login where college_re
 if($row=mysqli_fetch_array($rs))
 {
 ?>
-<body><center><h2>Institution </h2>
+<body style="font-size: 18px;"><center><h1>Approval Process </h1>
+  <br><br>
 <form action="" method="post">
-  <table width="500" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td>Name</td>
+  <table width="600" border="0" cellspacing="0" cellpadding="10">
+  <tr align="center">
+    <th>Name</th>
     <td><?php echo $row[1]?></td>
   </tr>
-  <tr>
-    <td>Affliation Number</td>
+  <tr align="center">
+    <th>Affliation Number</th>
     <td><?php echo $row[2]?></td>
   </tr>
-  <tr>
-    <td>Address</td>
+  <tr align="center">
+    <th>Address</th>
     <td><?php echo $row[3]?></td>
   </tr>
-  <tr>
-    <td>District</td>
+  <tr align="center">
+    <th>District</th>
     <td><?php echo $row[4]?></td>
   </tr>
-  <tr>
-    <td>Pin</td>
+  <tr align="center">
+    <th>Pin</th>
     <td><?php echo $row[5]?></td>
   </tr>
-  <tr>
-    <td>E-mail</td>
+  <tr align="center">
+    <th>E-mail</th>
     <td><?php echo $row[6]?></td>
   </tr>
-  <tr>
-    <td>Phone Number</td>
+  <tr align="center">
+    <th>Phone Number</th>
     <td><?php echo $row[7]?></td>
   </tr>
   <?php }?>

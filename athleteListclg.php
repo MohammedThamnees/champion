@@ -9,7 +9,7 @@ include("clg_header.php");
 include("connection.php");
 $clg_id=$_SESSION['lid'];
 ?>
-<body>
+<body style="font-size: 18px;">
   <center>
     <h1>Current Status of Registered Athletes</h1>
     <br>

@@ -5,7 +5,7 @@
 <title>Untitled Document</title>
 </head>
 <?php include("clg_header.php")?>
-<body>
+<body style="font-size: 18px;">
   <center>
     <h1>View Result of Meet</h1>
     <br>

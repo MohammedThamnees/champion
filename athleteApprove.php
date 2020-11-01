@@ -14,9 +14,12 @@ $rs=mysqli_query($con,"select athlete_registration.*,college_registration.clg_na
 if($row=mysqli_fetch_array($rs))
 {
 ?>
-<body><center><h2>Athlete Approve</h2><hr width="250">
+<body style="font-size: 18px;">
+  <center>
+    <h1>Athlete Approval Process</h1>
+    <br><br>
 <form action="" method="POST" >
-<table width="700"  cellspacing="0" cellpadding="10" align="center">
+<table width="700"  cellspacing="0" cellpadding="10">
 <tr >
    <td colspan="2" align="center"><a href="upload/<?php echo $row['photo'] ?>" target="_blank"><img src="upload/<?php echo $row['photo'] ?>" height="100" width="100" /></td>
   </tr>
@@ -88,6 +91,7 @@ if($row=mysqli_fetch_array($rs))
     </tr>
 </table>
 </form>
+</center>
 </body>
 <?php include("admin_footer.php")?>
 </html>

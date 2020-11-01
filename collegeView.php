@@ -7,11 +7,14 @@
 <?php
 include("admin_header.php");
 ?>
-<body>
-<table width="400" border="1" cellspacing="0" cellpadding="10" align="center">
+<body style="font-size: 18px;">
+  <center>
+    <h1>Registered Colleges</h1>
+    <br><br>
+<table width="600" border="1" cellspacing="0" cellpadding="10">
   <tr>
-    <td>Sl</td>
-    <td>College</td> 
+    <th>Sl</th>
+    <th>College</th> 
     <td>&nbsp;</td>
   </tr>
   <?php
@@ -28,6 +31,7 @@ while($row=mysqli_fetch_array($rs))
   </tr>
   <?php $i++; }?>
 </table>
+</center>
 </body>
 <?php
 include("admin_footer.php");

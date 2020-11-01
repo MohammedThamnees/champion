@@ -5,13 +5,16 @@
 <title>Untitled Document</title>
 </head>
 <?php include("admin_header.php")?>
-<body>
+<body style="font-size: 18px;">
 <center>
+  <h1>Result Publish</h1>
+  <br><br>
   <form action="" method="post">
 <table width="600" border="0" cellspacing="0" cellpadding="10">
   <tr>
-    <th colspan="2" scope="row"><label for="select">Select Meet</label>
-      <label for="select6"></label>
+    <th scope="row"><label for="select">Select Meet</label>
+      <label for="select6"></label></th>
+      <td>
       <?php
       $buffer = "<select name='select6' id='select6'>
         <option>-select-</option>";
@@ -28,58 +31,67 @@
 $buffer = $buffer."</select>";
 echo $buffer;
      ?>
-      </select>
-    </th>
+    </td>
   </tr>
   <tr>
-    <th colspan="2" scope="row"><label for="select">Select Gender</label>
-      <label for="select5"></label>
+    <th scope="row"><label for="select">Select Gender</label>
+      <label for="select5"></label></th>
+      <td>
       <select name="select5" id="select5" onchange="shows(this.value)">
       <option>-select-</option>
       <option>Male</option>
       <option>Female</option>
-      </select></th>
+      </select></td>
     </tr>
   <tr>
-    <th colspan="2" scope="row"><label for="select">Select Event</label>
-      <label for="select"></label>
+    <th scope="row"><label for="select">Select Event</label>
+      <label for="select"></label></th>
+      <td>
       <select name="select" id="select" onchange="show(this.value)">
       <option>-select-</option>
         
 		
-      </select></th>
+      </select></td>
   </tr>
+</table>
+<br><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
   <tr>
     <th scope="row">1<sup>st</sup> Price</th>
-    <td>
+    <th scope="row">2<sup>nd</sup> Price</th>
+    <th scope="row">3<sup>rd</sup> Price</th>
+  </tr>
+  <tr>
+    <td align="center">
     
-      <select name="select2" id="select2">
+      <select name="select2" id="select2" required>
       
 	  
       
       
-      </select></td>
+      </select>
+    </td>
+    
+    <td align="center"><label for="select3"></label>
+      <select name="select3" id="select3" required>
+      
+      
+      
+      </select>
+    </td>
+  
+    
+    <td align="center">
+      <label for="select4"></label>
+      <select name="select4" id="select4" required>
+      
+      
+      
+      </select>
+    </td>
   </tr>
   <tr>
-    <th scope="row">2<sup>nd</sup> Price</th>
-    <td><label for="select3"></label>
-      <select name="select3" id="select3">
-      
-      
-      
-      </select></td>
-  </tr>
-  <tr>
-    <th scope="row">3<sup>rd</sup> Price</th>
-    <td><label for="select4"></label>
-      <select name="select4" id="select4">
-      
-      
-      
-      </select></td>
-  </tr>
-  <tr>
-    <th colspan="2" scope="row">
+    <th colspan="3" scope="row">
       <div class="form-group form-button">
       <input type="submit" name="button" id="button" value="Publish Result" class="form-submit"/></div>
     </th>

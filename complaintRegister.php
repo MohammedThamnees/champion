@@ -25,14 +25,14 @@ if(isset($_POST['btnsbt']))
 }
 ?>
   
-<body><form action="" method="post" enctype="multipart/form-data">
+<body style="font-size: 18px;"><form action="" method="post" enctype="multipart/form-data">
   <center><h2>Complaint Register</h2>
   <table width="400" border="0" cellspacing="0" cellpadding="10">
     <tr>
       <th scope="row">Type Your Complaint</th>
       <td><label for="txtcplt"></label>
         
-          <textarea name="txtcplt" id="txtcplt" style="width: 500px; height: 300px;"></textarea>        <label for="flcmpt"></label></td>
+          <textarea name="txtcplt" id="txtcplt" style="width: 500px; height: 300px;" required></textarea>        <label for="flcmpt"></label></td>
     </tr>
     <tr>
       <th colspan="2" scope="row">

@@ -5,14 +5,17 @@
 <title>Untitled Document</title>
 </head>
 <?php include("admin_header.php")?>
-<body>
+<body style="font-size: 18px;">
+  <center>
+    <h1>Registered Athletes</h1>
+    <br><br>
 <form action="" method="POST">
-<table width="500" border="1" cellspacing="0" cellpadding="10" align="center">
+<table width="600" border="1" cellspacing="0" cellpadding="10">
   <tr>
-    <td>Sl</td>
-    <td>Athlet Name</td>
-    <td>College</td>
-    <td>&nbsp;</td>
+    <th>Sl</th>
+    <th>Athlet Name</th>
+    <th>College</th>
+    <th>&nbsp;</th>
   </tr>
 <?php
 include("connection.php");
@@ -30,6 +33,7 @@ while($row=mysqli_fetch_array($rs))
   <?php $i++; }?>
 </table>
 </form>
+</center>
 </body>
 <?php include("admin_footer.php")?>
 </html>

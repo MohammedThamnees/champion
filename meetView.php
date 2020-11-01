@@ -16,7 +16,7 @@ $rs=mysqli_query($con,"select meet_register.* from meet_register where apply_bef
 				$_SESSION["meet_id"]=$row[0];
 ?>
 
-<body>
+<body style="font-size: 18px;">
   <center>
   <h1>MEET VIEW</h1>
   <br>

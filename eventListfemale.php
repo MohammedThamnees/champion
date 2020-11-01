@@ -5,7 +5,7 @@
 <title>Untitled Document</title>
 </head>
 
-<body><form action="" method="post">
+<body style="font-size: 18px;"><form action="" method="post">
 <center>
 
 <table width="800" border="1" cellspacing="0" cellpadding="10">
@@ -13,6 +13,7 @@
 <?php
 include("connection.php");
 $pq=mysqli_query($con,"select max(meet_id) from event_select");
+
 while ($check=mysqli_fetch_array($pq)) {
   $cond=$check[0];
 }

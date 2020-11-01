@@ -6,7 +6,7 @@
 </head>
 <?php include("clg_header.php")?>
 
-<body>
+<body style="font-size: 18px;">
 <center>
     <h1>Approved Athletes of the College</h1>
     <br><br>

@@ -7,7 +7,7 @@
 <?php
 	include("clg_header.php");
 ?>
-<body><center>
+<body style="font-size: 18px;"><center>
 	<h2>Event Selection</h2></br>
 	<form action="" method="POST" >
 	<table width="300" border="0" cellpadding="10" cellspacing="0">

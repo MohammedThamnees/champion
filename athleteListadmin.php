@@ -8,7 +8,7 @@
   include("admin_header.php");
 ?>
 
-<body><center><h2>Athlete List</h2>
+<body style="font-size: 18px;"><center><h1>Athlete List</h1>
   <br><br>
 
 <form id="form1" name="form1" method="post" action="">

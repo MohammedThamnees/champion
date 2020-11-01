@@ -41,7 +41,7 @@ if(isset($_POST['btnsubmit']))
 }
 ?>
 
-<body>
+<body style="font-size: 18px;">
   <center><h2>Athlete Registeration</h2></center>
   <center>
 <form action="" method="POST" enctype="multipart/form-data">
