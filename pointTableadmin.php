@@ -9,7 +9,7 @@
   <center>
   <h1>Boys Events</h1>
   <br><br>
-<table width="200" border="1" cellspacing="0" cellpadding="10">
+<table width="200" border="1" cellspacing="0" cellpadding="9">
   <tr>
     <th scope="col">SI</th>
     <th scope="col">College</th>
@@ -38,7 +38,7 @@
 
 <h1>Girls Events</h1>
 <br><br>
-<table width="200" border="1" cellspacing="0" cellpadding="10">
+<table width="200" border="1" cellspacing="0" cellpadding="9">
   <tr>
     <th scope="col">SI</th>
     <th scope="col">College</th>
@@ -91,8 +91,6 @@ $rs=mysqli_query($con,"");
     	<td><?php echo $row['']?></td>
     	<td><?php echo $row['']?></td>
     	<td><?php echo $row['']?></td>
-    	<td><?php echo $row['']?></td>
-   		<td><?php echo $row['']?></td>
     </tr>
    <?php
 		 $i++; 

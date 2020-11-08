@@ -42,8 +42,8 @@
           <li><a href="eventGenderadmin.php">Event List</a></li>
           <li><a href="resultViewadmin.php">View Result</a></li>
           <li><a href="athleteListadmin.php">Athletic List</a></li>
-          <li><a href="pointTableadmin.php">Point Table</a></li>
-          <li><a href=".php">Records</a></li>
+          
+      
           <li><a href="logout.php">Log Out</a></li>
         </ul>
       </div>

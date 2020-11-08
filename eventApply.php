@@ -15,6 +15,7 @@
 	<th colspan="3"><h4>Individual Events</h4></th></tr>
 	<tr>
 		<td><select name="event1" id="event1">
+			<option>--select--</option>
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
@@ -36,6 +37,7 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=1
 		</select> </td>
 		<td>
 		<select name="event2" id="event2">
+			<option>--select--</option>
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
@@ -56,6 +58,7 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=1
       
 		</select> </td>
 		<td><select name="event3" id="event3">
+			<option>--select--</option>
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];
@@ -80,6 +83,7 @@ $rs=mysqli_query($con,"SELECT * FROM events WHERE gender='$gender' and evt_id!=1
 		<h4>Group  Event</h4></th></tr>
 		<tr><th colspan="3">
 		<select name="grpevent" id="grpevent">
+			<option>--select--</option>
 			<?php
 			include("connection.php");
 $gender=$_GET['gender'];

@@ -12,12 +12,9 @@
             <h2>Navigation</h2>
             <hr>
             <ul>
-              <li><a href="adminHome.php" title="home">Home</a></li>
-               <li><a href=".php" title="complaints">View complaints</a></li>
-               <li><a href="athleteListadmin.php" title="view athlete list">View athlete list</a></li
-               ><li><a href="resultViewadmin.php" title="view result">View result</a></li>
-               <li><a href=".php" title="view point">View point</a></li>
-               <li><a href="eventGenderadmin.php" title="view event-list">View event-list</a></li>
+              
+               <li><a href=".php" title="about">About Us</a></li>
+               <li><a href=".php" title="contact">Contact Us</a></li>
             </ul>
           </nav>
         </div>
