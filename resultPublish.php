@@ -16,7 +16,7 @@
       <label for="select6"></label></th>
       <td>
       <?php
-      $buffer = "<select name='select6' id='select6'>
+      $buffer = "<select name='select6' id='select6'size='1px'>
         <option>-select-</option>";
       
         include("connection.php");
@@ -37,7 +37,7 @@ echo $buffer;
     <th scope="row"><label for="select">Select Gender</label>
       <label for="select5"></label></th>
       <td>
-      <select name="select5" id="select5" onchange="shows(this.value)">
+      <select name="select5" id="select5" size="1px" onchange="shows(this.value)">
       <option>-select-</option>
       <option>Male</option>
       <option>Female</option>
@@ -47,7 +47,7 @@ echo $buffer;
     <th scope="row"><label for="select">Select Event</label>
       <label for="select"></label></th>
       <td>
-      <select name="select" id="select" onchange="show(this.value)">
+      <select name="select" id="select" size="1px" onchange="show(this.value)">
       <option>-select-</option>
         
 		
@@ -64,7 +64,7 @@ echo $buffer;
   <tr>
     <td align="center">
     
-      <select name="select2" id="select2" required>
+      <select name="select2" id="select2" size="1px" required>
       
 	  
       
@@ -73,7 +73,7 @@ echo $buffer;
     </td>
     
     <td align="center"><label for="select3"></label>
-      <select name="select3" id="select3" required>
+      <select name="select3" id="select3" size="1px" required>
       
       
       
@@ -83,7 +83,7 @@ echo $buffer;
     
     <td align="center">
       <label for="select4"></label>
-      <select name="select4" id="select4" required>
+      <select name="select4" id="select4" size="1px" required>
       
       
       

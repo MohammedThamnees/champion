@@ -9,6 +9,17 @@ include("clg_header.php");
 include("connection.php");
 $clg_id=$_SESSION['lid'];
 if(isset($_POST['btnsbt']))
+  if (empty($_POST["txtcplt"])) 
+  {
+  ?>
+  <script>
+     alert("Cannot submit form. Write any complaint if you have..");
+   window.location="complaintRegister.php";
+    </script>
+
+<?php
+}
+else
 {
  $compl=$_POST['txtcplt'];
 
@@ -32,7 +43,7 @@ if(isset($_POST['btnsbt']))
       <th scope="row">Type Your Complaint</th>
       <td><label for="txtcplt"></label>
         
-          <textarea name="txtcplt" id="txtcplt" style="width: 500px; height: 300px;" required></textarea>        <label for="flcmpt"></label></td>
+          <textarea name="txtcplt" id="txtcplt" style="width: 500px; height: 300px;" placeholder="Type your complaint here........"></textarea>        <label for="flcmpt"></label></td>
     </tr>
     <tr>
       <th colspan="2" scope="row">

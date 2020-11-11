@@ -40,7 +40,7 @@
           <li><a href="complaintRegister.php">Complaint Register</a></li>
           <li><a href="eventGenderclg.php">Event List</a></li>
           <li><a href="athleteListclg.php">Athletic List</a></li>
-          
+          <li><a href="viewReply.php">View Complaint Reply</a></li>
         
           <li><a href="logout.php">Log Out</a></li>
         </ul>

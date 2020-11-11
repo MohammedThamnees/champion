@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2020 at 05:17 AM
+-- Generation Time: Nov 08, 2020 at 07:15 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -58,7 +58,33 @@ INSERT INTO `athlete_registration` (`ath_id`, `name`, `dob`, `gender`, `email`, 
 (3, 'rashida', '2020-09-17', 'female', 'rashi@gmail.com', 2147483647, 'rash', 'rashi', 'Ernakulam', 'rashid\r\nvairancode\r\nkerala', 765434, 'rafi', 'B+ve', 0x6174686c6574655f617070726f76616c312e706e67, 0x6174686c6574655f617070726f76616c322e706e67, '1000000004', 4, 'approved'),
 (4, 'aslam', '2020-07-15', 'male', 'aslam@gmail.com', 2147483647, 'asl', 'aslu', 'Malappuram', 'aslm veetil\r\nmalappuram', 87548, 'thamnees', 'B+ve', 0x6368616d70696f6e2e706e67, 0x726573756c745f7075626c6973682e706e67, '1000000001', 4, 'approved'),
 (5, 'aswini', '2020-01-01', 'female', 'aswini@gmail.com', 2147483647, 'havoo', 'havooo', 'Kozhikode', 'aswini veetil\r\nkozhikode', 878373, 'adarsh', 'B+ve', 0x61646d696e686f6d652e706e67, 0x6368616d70696f6e2e706e67, '1000000003', 4, 'approved'),
-(6, 'radhika', '2019-08-17', 'female', 'radhika@gmail.com', 2147483647, 'ra', 'ri', 'Ernakulam', 'radhika veetil', 768765, 'cachil', 'B+ve', 0x636c675f617070726f76616c322e706e67, 0x636f6d706c61696e74312e706e67, '1000000005', 2, 'approved');
+(6, 'radhika', '2019-08-17', 'female', 'radhika@gmail.com', 2147483647, 'ra', 'ri', 'Ernakulam', 'radhika veetil', 768765, 'cachil', 'B+ve', 0x636c675f617070726f76616c322e706e67, 0x636f6d706c61696e74312e706e67, '1000000005', 2, 'approved'),
+(7, 'ramsi', '2020-10-07', 'male', 'ramsi@gmail.com', 2147483647, 'rasheed', 'ramla', 'Malappuram', 'tanalur\r\nmalappuram', 676854, 'abid', 'O+ve', 0x6174686c6574656c69737461646d696e2e504e47, 0x706c616e742e6a7067, '1000000006', 2, 'approved'),
+(8, 'suhail', '2013-01-29', 'male', 'suhail@gmail.com', 2147483647, 'suhu', 'suhi', 'Malappuram', 'parappiul\r\ntanaloor\r\ntirur', 676554, 'abid', 'AB+ve', 0x6174686c6574656c69737461646d696e2e504e47, 0x706c616e742e6a7067, '1000000007', 8, 'approved');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `champion`
+--
+
+CREATE TABLE `champion` (
+  `champ_id` int(11) NOT NULL,
+  `ath_id` int(11) DEFAULT NULL,
+  `total_point` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `champion`
+--
+
+INSERT INTO `champion` (`champ_id`, `ath_id`, `total_point`) VALUES
+(1, 1000000001, 10),
+(2, 1000000000, 10),
+(3, 1000000006, 13),
+(4, 1000000001, 10),
+(5, 1000000000, 10),
+(6, 1000000006, 13);
 
 -- --------------------------------------------------------
 
@@ -89,7 +115,8 @@ INSERT INTO `college_registration` (`clg_id`, `clg_name`, `affliation`, `address
 (3, 'mes', 31232435, 'mes college\r\nkuttippuram\r\nmalappuram', 'Malappuram', 88877, 'mes@gmail.com', 2147483647, 'mes', 4),
 (4, 'pmsa', 235627884, 'pmsa college\r\ntirur\r\nmalappuram', 'Malappuram', 654564, 'pmsa@gmail.com', 0, '', 5),
 (5, '', 0, '', 'select', 0, '', 0, '', 6),
-(6, 'ideal123', 4352764, 'ideal college\r\nmalappuram', 'Malappuram', 785548, 'ideal123@gmail.com', 2147483647, 'ideal123', 7);
+(6, 'ideal123', 4352764, 'ideal college\r\nmalappuram', 'Malappuram', 785548, 'ideal123@gmail.com', 2147483647, 'ideal123', 7),
+(7, 'pkm college', 54367836, 'pkm college\r\ntirur\r\nmalappuram', 'Malappuram', 676551, 'pkm@gmail.com', 2147483647, 'pkm', 8);
 
 -- --------------------------------------------------------
 
@@ -111,7 +138,7 @@ CREATE TABLE `complaint` (
 --
 
 INSERT INTO `complaint` (`cmp_id`, `clg_id`, `cmplaint`, `reply`, `cmp_date`, `rep_date`) VALUES
-(1, 4, 'i have some complaint...', NULL, '2020-10-26', NULL);
+(1, 4, 'i have some complaintss!!!', NULL, '2020-10-28', NULL);
 
 -- --------------------------------------------------------
 
@@ -190,27 +217,35 @@ INSERT INTO `event_select` (`evtslc_id`, `evt_id`, `ath_id`, `meet_id`) VALUES
 (1, 20, 3, 1),
 (2, 21, 3, 1),
 (3, 22, 3, 1),
-(4, 38, 3, 1),
+(4, 37, 3, 1),
 (5, 1, 4, 1),
 (6, 2, 4, 1),
 (7, 3, 4, 1),
-(8, 19, 4, 1),
+(8, 18, 4, 1),
 (9, 20, 5, 1),
 (10, 21, 5, 1),
 (11, 22, 5, 1),
-(12, 38, 5, 1),
+(12, 37, 5, 1),
 (13, 1, 1, 1),
 (14, 2, 1, 1),
 (15, 3, 1, 1),
-(16, 19, 1, 1),
+(16, 18, 1, 1),
 (17, 20, 6, 1),
 (18, 21, 6, 1),
 (19, 22, 6, 1),
-(20, 38, 6, 1),
-(21, 1, 2, 1),
-(22, 2, 2, 1),
-(23, 3, 2, 1),
-(24, 19, 2, 1);
+(20, 37, 6, 1),
+(21, 1, 7, 1),
+(22, 2, 7, 1),
+(23, 3, 7, 1),
+(24, 18, 7, 1),
+(25, 1, 8, 1),
+(26, 2, 8, 1),
+(27, 3, 8, 1),
+(28, 18, 8, 1),
+(29, 1, 1, 2),
+(30, 2, 1, 2),
+(31, 0, 1, 2),
+(32, 0, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -236,7 +271,8 @@ INSERT INTO `login` (`id`, `username`, `password`, `type`) VALUES
 (4, 'mes@gmail.com', 'mes', 'user'),
 (5, 'pmsa@gmail.com', '', 'pending'),
 (6, '', '', 'pending'),
-(7, 'ideal123@gmail.com', 'ideal123', 'user');
+(7, 'ideal123@gmail.com', 'ideal123', 'user'),
+(8, 'pkm@gmail.com', 'pkm', 'user');
 
 -- --------------------------------------------------------
 
@@ -259,7 +295,8 @@ CREATE TABLE `meet_register` (
 --
 
 INSERT INTO `meet_register` (`meet_id`, `meet_name`, `venue`, `place`, `start_date`, `end_date`, `apply_before`) VALUES
-(1, '27th athletic meet 2020', 'tirur stadium', 'tirur', '2020-10-23', '2020-10-24', '2020-10-23');
+(1, '29th athletic meet', 'tirur stadium', 'tirur', '2020-11-01', '2020-11-02', '2020-10-30'),
+(2, '30th athletic meet', 'kakkanad stadium', 'kakkanad', '2020-11-11', '2020-11-14', '2020-11-10');
 
 -- --------------------------------------------------------
 
@@ -282,11 +319,8 @@ CREATE TABLE `result` (
 --
 
 INSERT INTO `result` (`result_id`, `date`, `first`, `second`, `third`, `evt_id`, `meet_id`) VALUES
-(1, '2020-10-20', 1000000001, 1000000000, 1000000002, 1, 1),
-(2, '2020-10-20', 1000000000, 1000000002, 1000000001, 2, 1),
-(3, '2020-10-20', 1000000004, 1000000003, 1000000005, 20, 1),
-(4, '2020-10-20', 1000000003, 1000000005, 1000000004, 21, 1),
-(8, '2020-10-24', 1000000000, 1000000001, 1000000002, 19, 1);
+(1, '2020-10-28', 1000000001, 1000000000, 1000000006, 1, 1),
+(2, '2020-11-04', 1000000006, 1000000000, 1000000007, 2, 1);
 
 --
 -- Indexes for dumped tables
@@ -297,6 +331,12 @@ INSERT INTO `result` (`result_id`, `date`, `first`, `second`, `third`, `evt_id`,
 --
 ALTER TABLE `athlete_registration`
   ADD PRIMARY KEY (`ath_id`);
+
+--
+-- Indexes for table `champion`
+--
+ALTER TABLE `champion`
+  ADD PRIMARY KEY (`champ_id`);
 
 --
 -- Indexes for table `college_registration`
@@ -348,13 +388,19 @@ ALTER TABLE `result`
 -- AUTO_INCREMENT for table `athlete_registration`
 --
 ALTER TABLE `athlete_registration`
-  MODIFY `ath_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'athlete id', AUTO_INCREMENT=7;
+  MODIFY `ath_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'athlete id', AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `champion`
+--
+ALTER TABLE `champion`
+  MODIFY `champ_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `college_registration`
 --
 ALTER TABLE `college_registration`
-  MODIFY `clg_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'college id', AUTO_INCREMENT=7;
+  MODIFY `clg_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'college id', AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `complaint`
@@ -372,25 +418,25 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `event_select`
 --
 ALTER TABLE `event_select`
-  MODIFY `evtslc_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'event select id', AUTO_INCREMENT=25;
+  MODIFY `evtslc_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'event select id', AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'login id', AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'login id', AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `meet_register`
 --
 ALTER TABLE `meet_register`
-  MODIFY `meet_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'meet id', AUTO_INCREMENT=2;
+  MODIFY `meet_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'meet id', AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `result`
 --
 ALTER TABLE `result`
-  MODIFY `result_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id of result', AUTO_INCREMENT=9;
+  MODIFY `result_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id of result', AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

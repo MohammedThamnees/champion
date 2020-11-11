@@ -84,7 +84,7 @@ if($_SESSION["lid"]=="")
   <div class="dropdown-content">
   <a href="athleteListclg.php">Athletic list</a>
   <a href="complaintRegister.php">Complaint Register</a>
-  <a href=".php">View Reply</a>
+  <a href="viewReply.php">View Complaint Reply</a>
   </div>
 </div>
       

@@ -24,7 +24,7 @@ include("connection.php");
   </tr>
   <tr>
   <?php
-    $rs=mysqli_query($con,"select complaint.*,college_registration.* from complaint,college_registration where complaint.clg_id=college_registration.clg_id  order by cmp_date desc");
+    $rs=mysqli_query($con,"select complaint.*,college_registration.* from complaint,college_registration where complaint.clg_id=college_registration.lid order by cmp_date desc");
 	$i=1;
 	if(mysqli_num_rows($rs)>0)
 		{
@@ -43,7 +43,7 @@ include("connection.php");
 	 if(is_null($row['reply']))
 	 {
 		 ?>
-         <td><a href="Reply.php">Reply</a></td>
+         <td><a href="complaintReply.php?id=<?php echo $row['cmp_id'] ?>">Reply</a></td>
          <?php
 	 }
 	 else

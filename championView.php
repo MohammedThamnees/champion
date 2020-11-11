@@ -10,6 +10,11 @@
   <input type="submit" name="button" id="button" value="Champion" class="form-submit"/>
 </div>
 
+<?php
+include("connection.php");
+$sql=mysqli
+?>
+<h1>The champion is </h1>
 
 <?//php include("admin_footer.php")?>
 </html>
