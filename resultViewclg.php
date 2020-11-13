@@ -131,9 +131,15 @@ if(isset($_POST['button']))
     </tr>
     <tr>
       <td>Total Point</td>
-      <td><?php echo $point+$p+$r+10 ?></td>
+      <td><?php 
+      $a1=$point+$p+$r+10;
+      echo $a1 ?></td>
     </tr>
-    <?php  }}?>
+    <?php  
+      
+            mysqli_query($con,"insert into champion values(null,'$id','$a1','$meet')");
+   
+  }}?>
   </table>
 </td>
 
@@ -204,9 +210,16 @@ if(isset($_POST['button']))
     </tr>
     <tr>
       <td>Total Point</td>
-      <td><?php echo $r2+$point1+$p1+5?></td>
+      <td><?php 
+      $a2=$r2+$point1+$p1+5;
+      echo $a2 ?></td>
     </tr>
-    <?php  }}?>
+    <?php  
+
+            mysqli_query($con,"insert into champion values(null,'$id','$a2','$meet')");
+         
+
+}}?>
   </table>
 </td>
 
@@ -273,9 +286,16 @@ if(isset($_POST['button']))
     </tr>
     <tr>
       <td>Total Point</td>
-      <td><?php echo $point1+$r2+$p1+3?></td>
+      <td><?php 
+       $a3=$point1+$r2+$p1+3;
+       echo $a3 ?></td>
     </tr>
-    <?php  }}?>
+    <?php  
+
+            mysqli_query($con,"insert into champion values(null,'$id','$a3','$meet')");
+    
+
+}}?>
   </table> 
 </td>
 </tr>

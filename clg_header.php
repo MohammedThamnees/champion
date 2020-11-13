@@ -85,6 +85,7 @@ if($_SESSION["lid"]=="")
   <a href="athleteListclg.php">Athletic list</a>
   <a href="complaintRegister.php">Complaint Register</a>
   <a href="viewReply.php">View Complaint Reply</a>
+  <a href="championViewclg.php">View Champion</a>
   </div>
 </div>
       

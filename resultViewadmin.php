@@ -138,7 +138,7 @@ if(isset($_POST['button']))
     </tr>
     <?php  
       
-            mysqli_query($con,"insert into champion values(null,'$id','$a1')");
+            mysqli_query($con,"insert into champion values(null,'$id','$a1','$meet')");
    
   }}?>
   </table>
@@ -217,7 +217,7 @@ if(isset($_POST['button']))
     </tr>
     <?php  
 
-            mysqli_query($con,"insert into champion values(null,'$id','$a2')");
+            mysqli_query($con,"insert into champion values(null,'$id','$a2','$meet')");
          
 
 }}?>
@@ -294,7 +294,7 @@ if(isset($_POST['button']))
     </tr>
     <?php  
 
-            mysqli_query($con,"insert into champion values(null,'$id','$a3')");
+            mysqli_query($con,"insert into champion values(null,'$id','$a3','$meet')");
     
 
 }}?>
