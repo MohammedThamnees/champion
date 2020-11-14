@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-<?php include("clg_header.php")?>
+<?php include("admin_header.php")?>
 
 <body style="font-size: 18px;">
   <center>
@@ -62,5 +62,5 @@ if (mysqli_num_rows($sql)>0){
 }
 ?>
 </body>
-<?php include("clg_footer.php")?>
+<?php include("admin_footer.php")?>
 </html>

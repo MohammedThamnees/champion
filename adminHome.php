@@ -41,6 +41,7 @@
           <li><a href="complaintView.php">View Complaint</a></li>
           <li><a href="eventGenderadmin.php">Event List</a></li>
           <li><a href="resultViewadmin.php">View Result</a></li>
+          <li><a href="championViewadmin.php">View champion</a></li>
           <li><a href="athleteListadmin.php">Athletic List</a></li>
           
       
