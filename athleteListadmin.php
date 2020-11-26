@@ -18,8 +18,8 @@
     <th scope="col"><h4>Select College</h4></th>
      <td align="center"> <label for="select6"></label>
       <?php
-      $buffer = "<select name='select6' id='select6'>
-        <option>-select-</option>";
+      $buffer = "<select name='select6' id='select6' size='1px' required>
+        <option></option>";
       
         include("connection.php");
         $rep="select * from college_registration,login WHERE college_registration.lid=login.id and login.type='user'";

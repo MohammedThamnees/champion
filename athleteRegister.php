@@ -42,7 +42,8 @@ if(isset($_POST['btnsubmit']))
 ?>
 
 <body style="font-size: 18px;">
-  <center><h2>Athlete Registeration</h2></center>
+  <center><h1>Athlete Registeration</h1></center>
+  <br><br>
   <center>
 <form action="" method="POST" enctype="multipart/form-data">
 <table width="800" cellspacing="0" cellpadding="10">
@@ -91,7 +92,7 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">District</th>
     <td><label for="slcdistrict"></label>
-      <select name="slcdistrict" id="slcdistrict" required>
+      <select name="slcdistrict" id="slcdistrict" size="1" required>
         <option>select</option>
         <option>Thiruvananthapuram</option>
         <option>Kollam</option>
@@ -128,7 +129,7 @@ if(isset($_POST['btnsubmit']))
   <tr>
     <th scope="row">Blood group</th>
     <td><label for="slcblood"></label>
-      <select name="slcblood" id="slcblood" required>
+      <select name="slcblood" id="slcblood" size="1" required>
         <option>Select</option>
         <option>A+ve</option>
         <option>B+ve</option>
@@ -151,12 +152,9 @@ if(isset($_POST['btnsubmit']))
       <input type="file" name="uplimage" id="uplimage" size="20" required/></td>
   </tr>
   <tr>
-    <th scope="row">
+    <th scope="row" colspan="2" align="center">
       <div class="form-group form-button">
         <input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" size="10" class="form-submit"/></div></th>
-    <th scope="row">
-      <div class="form-group form-button">
-        <input type="button" name="btback" id="btback" value="Back" size="10" class="form-submit"></div></th>
     </tr>
 </table>
 </form></center>

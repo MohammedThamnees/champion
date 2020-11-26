@@ -34,14 +34,10 @@
           <a href="https://www.pinterest.com">pinterest</a>
           </div>
       </div>
-      <div class="span4">
-        <div class="is-padded">
-          <h2>Details</h2>
-          <blockquote></blockquote>
-        </div>
-      </div>
+      
     </div>
     <p> &copy;2020<br>
+      Design and Developed by champion<a href="#"></a> </p>
      </p>
   </footer>
 </div>

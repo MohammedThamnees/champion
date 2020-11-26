@@ -16,8 +16,8 @@
     <td align="center">
       <label for="select6"></label>
       <?php
-      $buffer = "<select name='select6' id='select6'>
-        <option>-select-</option>";
+      $buffer = "<select name='select6' id='select6' size='1px' required>
+        <option></option>";
       
         include("connection.php");
         $rep="select * from meet_register";
@@ -37,9 +37,9 @@ echo $buffer;
     <tr>
       <th scope="col">Select Gender</th>
       <th scope="col"><label for="select2"></label>
-        <select name="select2" id="select2" onchange="show(this.value)">
+        <select name="select2" id="select2" onchange="show(this.value)" size="1" required>
         
-        <option>-select-</option>
+        <option></option>
       <option>male</option>
       <option>female</option>
       </select>        <label for="select"></label></th>
@@ -48,7 +48,7 @@ echo $buffer;
       <th scope="col">Select Event</th>
       
       
-      <th scope="col"><select name="select" id="select"  >
+      <th scope="col"><select name="select" id="select" size="1" required>
 
       
       </select></th>
