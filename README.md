@@ -1,5 +1,5 @@
 		Introduction
-------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 Sports is generally recognised as activities which are based in physical athleticism or
 physical dexterity, with the largest major competitions . The aim is to use ,improve and
@@ -24,14 +24,3 @@ point is entered by the represented staff and the point table, total result is c
 on this. The final result is also published in this site so that every colleges and athletes
 can directly access them. The scope of the project is very high because none of the above
 features are not provided by the existing system.
-
-
-		Team Members
-------------------------------------
-1. Mohammed Thamnees P
-2. Shijina K
-
-		guide
-------------------------------------
-
-1. Aathira C
